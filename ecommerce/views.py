@@ -16,3 +16,11 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def single_product_view(request, id):
+    product = Product.objects.get(id=id)
+    context = {
+        "product": product
+    }
+
+    return render(request, "products_detail.html", context)
