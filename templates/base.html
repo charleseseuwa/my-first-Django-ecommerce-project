@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'ecommerce/base.css'%}"
 
-    {% if title %}
-        <title>6B2 Blog - {{ title }}</title>
-    {% else %}
-        <title>6B2 Blog</title>
-    {% endif %}
+    
 </head>
 <body>
     <header class="site-header">
@@ -28,14 +24,15 @@
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="">Home</a>
-              <a class="nav-item nav-link" href="{%url 'about' %}">About</a>
-              <a class="nav-item nav-link" href="{%url 'contact' %}">Contact</a>
+              
+              
+              
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="{%url 'about' %}">About</a>
                 <a class="nav-item nav-link" href="{%url 'contact' %}">Contact</a>
-                
+                <a class="nav-item nav-link" href="{%url 'cart' %}">cart</a>
             </div>
           </div>
         </div>
